@@ -1,0 +1,94 @@
+.section {
+    padding: 2.5rem 0; /* Equivalent to py-10 */
+    background-color: #f7fafc; /* Equivalent to bg-gray-100 */
+}
+
+.container {
+    max-width: 1200px; /* Set max-width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 1rem; /* Padding for the container */
+}
+
+.skills {
+    font-size: 2rem; /* Equivalent to text-3xl */
+    font-weight: bold;
+    text-align: center; /* Center text */
+    margin-bottom: 2rem; /* Equivalent to mb-8 */
+}
+
+.skill {
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    font-weight: 600; /* Equivalent to font-semibold */
+    text-align: center; /* Center text */
+    margin-bottom: 1.5rem; /* Space below the title */
+}
+
+.skillList {
+    margin-top: 1.5rem; /* Space above the skill list */
+}
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem; /* Space between skill items */
+}
+
+.skillIcon {
+    font-size: 2.5rem; /* Equivalent to text-4xl */
+    margin-right: 1rem; /* Space to the right of the icon */
+}
+
+.progressBar {
+    width: 100%;
+    background-color: #e2e8f0; /* Equivalent to bg-gray-300 */
+    border-radius: 9999px; /* Fully rounded */
+    height: 0.5rem; /* Height of the progress bar */
+}
+
+.path {
+    height: 0.5rem; /* Height of the progress path */
+    border-radius: 9999px; /* Fully rounded */
+}
+
+.percentage {
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    font-weight: 600; /* Equivalent to font-semibold */
+}
+
+.text {
+    text-align: center; /* Center text */
+}
+
+.radialBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem; /* Space below each radial bar */
+}
+
+.my-svg {
+    width: 8rem; /* Equivalent to w-32 */
+    height: 8rem; /* Equivalent to h-32 */
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 2rem; /* More padding on larger screens */
+    }
+
+    .my-svg {
+        width: 10rem; /* Equivalent to md:w-40 */
+        height: 10rem; /* Equivalent to md:h-40 */
+    }
+
+    .skillItem {
+        margin-bottom: 2rem; /* More space for larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .my-svg {
+        width: 12rem; /* Equivalent to lg:w-48 */
+        height: 12rem; /* Equivalent to lg:h-48 */
+    }
+}

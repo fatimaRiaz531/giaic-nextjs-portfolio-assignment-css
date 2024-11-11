@@ -1,0 +1,83 @@
+.about {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  .about-text {
+    width: 100%; /* Full width on small screens */
+    padding-left: 1.5rem; /* Equivalent to md:pl-6 */
+    text-align: center; /* Center text on small screens */
+    margin-left: 0.5rem; /* Equivalent to ml-2 */
+    margin-bottom: 1.5rem; /* Equivalent to mb-6 */
+  }
+  
+  .about-text h2 {
+    font-size: 1.5rem; /* Base size for small screens */
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Equivalent to mb-2 */
+  }
+  
+  .about-text h4 {
+    font-size: 1.25rem; /* Base size for small screens */
+    margin-bottom: 1rem; /* Equivalent to mb-4 */
+  }
+  
+  .about-text p {
+    margin-bottom: 1rem; /* Equivalent to mb-4 */
+  }
+  
+  .btn-box {
+    background-color: #3b82f6; /* Equivalent to bg-blue-500 */
+    color: white;
+    padding: 0.5rem 1rem; /* Equivalent to py-2 px-4 */
+    border-radius: 0.375rem; /* Equivalent to rounded */
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it a block element */
+  }
+  
+  .btn-box:hover {
+    background-color: #2563eb; /* Equivalent to hover:bg-blue-600 */
+  }
+  
+  .about-img {
+    width: 100%; /* Full width on small screens */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+    margin-top: 2rem; /* Equivalent to mt-8 */
+    margin-right: 1.5rem; /* Equivalent to mr-6 */
+    margin-left: 1.5rem; /* Equivalent to ml-6 */
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .about {
+      flex-direction: row; /* Change to row on medium screens */
+    }
+  
+    .about-text {
+      width: 50%; /* Equivalent to md:w-1/2 */
+      text-align: left; /* Align text to the left on larger screens */
+      margin-bottom: 0; /* Remove bottom margin on larger screens */
+    }
+  
+    .about-img {
+      width: 50%; /* Equivalent to md:w-1/2 */
+    }
+  
+    .about-text h2 {
+      font-size: 2rem; /* Increase font size for larger screens */
+    }
+  
+    .about-text h4 {
+      font-size: 1.5rem; /* Increase font size for larger screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* Additional styles for larger screens (lg) can go here */
+    .about {
+      padding: 2rem; /* Add padding for larger screens */
+    }
+  }

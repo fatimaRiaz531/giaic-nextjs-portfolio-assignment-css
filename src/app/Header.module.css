@@ -1,0 +1,162 @@
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem; /* Equivalent to py-4 px-4 */
+    background-color: #2d3748; /* Equivalent to bg-gray-800 */
+    color: white;
+    max-width: 1536px; /* Equivalent to max-w-screen-2xl */
+    margin: 0 auto; /* Center the header */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    font-size: 2.25rem; /* Equivalent to text-4xl */
+    font-weight: bold;
+    color: #d53f8c; /* Equivalent to text-pink-600 */
+    text-decoration: none; /* Remove underline */
+}
+
+.nav {
+    display: flex; /* Show navigation items in a row */
+}
+
+.nav ul {
+    display: flex;
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.nav li {
+    margin: 0 1rem; /* Space between items */
+}
+
+.nav a {
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    color: #e2e8f0; /* Equivalent to text-gray-300 */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.nav a:hover {
+    color: #63b3ed; /* Equivalent to hover:text-blue-400 */
+}
+
+.nav a.active {
+    color: #63b3ed; /* Active link color */
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none; /* Hide mobile menu by default */
+    cursor: pointer; /* Change cursor for mobile menu */
+}
+
+/* Sheet Content */
+.sheet-content {
+    display: none; /* Hide by default */
+    position: absolute; /* Position for dropdown */
+    background-color: white; /* Background color */
+    color: black; /* Text color */
+    padding: 1rem; /* Padding for dropdown */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+}
+
+/* Show mobile menu when active */
+.sheet-content.active {
+    display: block; /* Show dropdown when active */
+}
+
+.sheet-content ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.sheet-content li {
+    margin-bottom: 1rem; /* Space between items */
+}
+
+.sheet-content a {
+    display: block; /* Make links block level */
+    font-size: 1.125rem; /* Font size for links */
+    color: #4a5568; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.sheet-content a:hover {
+    color: #63b3ed; /* Hover color */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .nav {
+        display: none; /* Hide nav on smaller screens */
+    }
+    
+    .mobile-menu {
+        display: block; /* Show mobile menu trigger */
+    }
+}  
+
+
+
+
+
+
+
+/* Hamburger button styles */
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav {
+        display: none; /* Hide nav by default */
+        flex-direction: column; /* Stack menu items vertically */
+        position: absolute; /* Position it absolutely */
+        top: 60px; /* Below the header */
+        right: 0;
+        height: auto ;
+        justify-content: space-between;
+       
+        background-color: #333; /* Background color for mobile menu */
+    }
+    .nav ul {
+        flex-direction: column;
+      
+    }
+    .nav li {
+        padding: 10px;
+    }
+    .nav.open {
+        display: flex; /* Show menu when open */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger on mobile */
+    }
+
+    .bar.active {
+        background-color: rgb(231, 115, 32); /* Change color when active */
+    }
+}
+
+@media (min-width: 768px) {
+    .nav ul {
+          flex-direction: row;
+    }
+  }

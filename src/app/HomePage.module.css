@@ -1,0 +1,123 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height of the viewport */
+    text-align: center;
+    padding: 1rem; /* Padding for the page */
+    background-color: #f7fafc; /* Equivalent to bg-gray-100 */
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem; /* Equivalent to mt-10 */
+}
+
+.rounded-full {
+    border-radius: 9999px; /* Full border radius for circular image */
+    margin-bottom: 1rem; /* Margin below the image */
+}
+
+.text-xl {
+    font-size: 1.25rem; /* Equivalent to text-xl */
+    font-weight: 600; /* Equivalent to font-semibold */
+}
+
+.text-4xl {
+    font-size: 2.25rem; /* Equivalent to text-4xl */
+    font-weight: bold; /* Equivalent to font-bold */
+    color: #6b46c1; /* Equivalent to text-purple-700 */
+}
+
+.mt-4 {
+    margin-top: 1rem; /* Equivalent to mt-4 */
+}
+
+.text-lg {
+    font-size: 1.125rem; /* Equivalent to text-lg */
+}
+
+.max-w-xl {
+    max-width: 36rem; /* Equivalent to max-w-xl */
+    margin: 0 auto; /* Center the paragraph */
+}
+
+.icn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem; /* Equivalent to mt-6 */
+    gap: 24rem; /* Increased gap between icons */
+    font-size: 8rem; /* Increased font size for larger icons */
+    color: #4a5568; /* Equivalent to text-gray-600 */
+    transition: color 0.3s; /* Transition for hover effect */
+    height: 80px;
+  }
+.icn a {
+    font-size: 3rem;
+}
+
+.icn:hover {
+    color: #3182ce; /* Equivalent to hover:text-blue-600 for LinkedIn */
+}
+
+.icn.github:hover {
+    color: #000; /* Equivalent to hover:text-black for GitHub */
+}
+
+.icn.whatsapp:hover {
+    color: #38a169; /* Equivalent to hover:text-green-600 for WhatsApp */
+}
+
+.icn.email:hover {
+    color: #e53e3e; /* Equivalent to hover:text-red-600 for Email */
+}
+
+.btn-box {
+    background-color: #6129e3; /* Equivalent to bg-purple-600 */
+    color: white; /* Text color */
+    padding: 1rem 4rem; /* Increased padding for a larger button */
+    border-radius: 0.5rem; /* Slightly rounded corners */
+    margin-top: 1.5rem; /* Equivalent to mt-6 */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for hover effect */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.25rem; /* Increased font size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.btn-box:hover {
+    background-color: #8fdc30; /* Hover color */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .home {
+        padding: 2rem; /* Increase padding on medium screens */
+    }
+
+    .home-content {
+        margin-top: 4rem; /* Increase margin on medium screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .home {
+        padding: 3rem; /* Increase padding on large screens */
+    }
+
+    .home-content {
+        margin-top: 5rem; /* Increase margin on large screens */
+    }
+}
+.name {
+    font-size: 2rem; /* Default font size */
+    font-weight: bold;
+    color: #da1598; /* A dark color for the text */
+    text-align: center; /* Center align text */
+    margin: 16px 0; /* Margin above and below the text */
+}
+
+
+  
